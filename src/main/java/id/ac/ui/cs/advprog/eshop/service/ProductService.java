@@ -1,6 +1,6 @@
-package id.cs.ui.ac.advprog.eshop.service;
+package id.ac.ui.cs.advprog.eshop.service;
 
-import id.cs.ui.ac.advprog.eshop.model.Product;
+import id.ac.ui.cs.advprog.eshop.model.Product;
 import java.util.List;
 
 public interface ProductService {
