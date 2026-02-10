@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping("/Product")
-public class ProductController{
+@RequestMapping("/product")
+public class ProductController {
 
     @Autowired
     private ProductService service;
 
-    @GetMapping("/Create")
+    @GetMapping("/create")
     public String createProductPage(Model model) {
         Product product = new Product();
         model.addAttribute("product", product);
@@ -29,7 +29,7 @@ public class ProductController{
         return "redirect:list";
     }
 
-    @GetMapping("List")
+    @GetMapping("/list")
     public String productListPage(Model model){
         List<Product> allProducts = service.findAll();
         model.addAttribute("products", allProducts);
