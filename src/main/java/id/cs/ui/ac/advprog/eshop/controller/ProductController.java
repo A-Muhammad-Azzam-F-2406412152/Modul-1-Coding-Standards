@@ -40,7 +40,7 @@ public class ProductController {
     public String editProductPage(@PathVariable("id") String id, Model model) {
         Product product = service.findById(id);
         model.addAttribute("product", product);
-        return "editProduct"; // Kamu perlu buat file editProduct.html nanti
+        return "editProduct";
     }
 
     @PostMapping("/edit")
